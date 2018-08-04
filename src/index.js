@@ -6,8 +6,6 @@ import './store';
 import './i18n';
 import './utils';
 import './component';
-import highlightJs from 'highlight.js';
-import 'highlight.js/styles/monokai-sublime.css'
 maxiloVue.targetComponent = App;
 maxiloVue.vue.use({
     install(vue){
@@ -15,7 +13,7 @@ maxiloVue.vue.use({
             inserted: function (el) {
                 let lines = el.innerHTML.split('\n').length;
                 el.classList.add('has-numbering');
-                setTimeout(() => {
+                setTimeout(async () => {
                     let node = document.createElement('ul');
                     node.classList.add('pre-numbering');
                     el.parentNode.appendChild(node);
@@ -25,6 +23,8 @@ maxiloVue.vue.use({
                         node.innerHTML = i;
                         target.appendChild(node);
                     }
+                    let highlightJs = await import('highlight.js');
+                    await import('highlight.js/styles/monokai-sublime.css');
                     highlightJs.highlightBlock(el);
                 }, 0)
             }
