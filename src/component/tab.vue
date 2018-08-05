@@ -1,6 +1,6 @@
 <template>
     <div>
-        <ul class="nav nav-tabs" role="tablist">
+        <ul :class="['nav', 'nav-tabs', _card]" role="tablist">
             <li 
                 v-for="(nav, index) in navs"
                 :key="index"
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-    name: 'mxlTab',
+    name: 'tab',
     data(){
         return {
             active: 0,
@@ -42,6 +42,10 @@ export default {
                 return [];
             },
             type: Array
+        },
+        cardHeader: {
+            default: '',
+            type: String
         }
     },
     computed: {
@@ -52,6 +56,9 @@ export default {
         },
         slotLength(){
             return this.$slots.default ? this.$slots.default.filter(v => v.tag).length : 0;
+        },
+        _card(){
+            return this.cardHeader ? 'card-header-' + this.cardHeader : '';
         }
     },
     methods: {

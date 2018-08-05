@@ -6,6 +6,7 @@ import './store';
 import './i18n';
 import './utils';
 import './component';
+import('highlight.js/styles/monokai-sublime.css');
 maxiloVue.targetComponent = App;
 maxiloVue.vue.use({
     install(vue){
@@ -24,7 +25,6 @@ maxiloVue.vue.use({
                         target.appendChild(node);
                     }
                     let highlightJs = await import('highlight.js');
-                    await import('highlight.js/styles/monokai-sublime.css');
                     highlightJs.highlightBlock(el);
                 }, 0)
             }

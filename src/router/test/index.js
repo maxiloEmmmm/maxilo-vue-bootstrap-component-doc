@@ -13,3 +13,6 @@ $router.middlewareGroup('auth', function(){
 $router.add('/index', () => import('pages/index'));
 
 $router.add('/data/table', () => import('pages/data/table.vue'));
+
+
+$router.add('/layout/card', () => import('pages/layout/card.vue'));

@@ -24,7 +24,7 @@
                     </p>
                     <p>
                         <mxl-tab :navs="['js', 'template']">
-<highlight type="javascript">export default {
+<mxl-highlight type="javascript">export default {
     data(){
         return {
             ds: [
@@ -79,8 +79,8 @@
             console.log(d);
         }
     }
-}</highlight>
-<highlight type="javascript">{{ code.template.demo1 }}</highlight>
+}</mxl-highlight>
+<mxl-highlight type="javascript">{{ code.template.demo1 }}</mxl-highlight>
                         </mxl-tab>
                     </p>
                 </div>
@@ -100,7 +100,7 @@
                     </p>
                     <p>
                         <mxl-tab :navs="['js', 'template']">
-<highlight type="javascript">export default {
+<mxl-highlight type="javascript">export default {
     data(){
         return {
             /* 数据源于mock.js模拟拦截, mock模板请异步console */
@@ -126,8 +126,8 @@
             ];
         }
     }
-}</highlight>
-<highlight type="javascript">{{ code.template.demo2 }}</highlight>
+}</mxl-highlight>
+<mxl-highlight type="javascript">{{ code.template.demo2 }}</mxl-highlight>
                         </mxl-tab>
                     </p>
                 </div>
