@@ -37,10 +37,32 @@ export default {
             this.$set(this.assets, 'menus', [
                 {title: 'Data-Dispaly', href: '#', hasChild: 1, children: [
                     {title: '表格', href: '/data/table'},
-                    {title: 'test', href: '/path/to'}
                 ]},
                 {title: 'Layout', href: '#', hasChild: 1, children: [
+                    {title: '小东西', href: '#', hasChild: 1, children: [
+                        {title: '行', href: '/layout/row'},
+                        {title: '列', href: '/layout/col'},
+                        {title: '多列', href: '/layout/cols'},
+                        {title: '一行一列', href: '/layout/rowcol'},
+                        {title: '无限极', href: '/layout/hierarchy'}
+                    ]},
                     {title: '卡片', href: '/layout/card'},
+                    {title: '列表组', href: '/layout/listGroup'},
+                    {title: '行内组', href: '/layout/listInLine'},
+                    {title: '无限箱子', href: '/layout/box'},
+                    {title: '自适应容器', href: '/layout/container'}
+                ]},
+                {title: 'Lib', href: '#', hasChild: 1, children: [
+                    {title: '警告', href: '/lib/alert'},
+                    {title: '包裹着文字~', href: '/lib/emotion-text'},
+                    {title: '等待', href: '/lib/loading'},
+                    {title: '弹出层', href: '/lib/modal'},
+                ]},
+                {title: 'Form', href: '#', hasChild: 1, children: [
+                    {title: '输入框', href: '/form/input'},
+                    {title: '下拉', href: '/form/select'},
+                    {title: '按钮', href: '/form/btn'},
+                    {title: '按钮组', href: '/form/btn-group'},
                 ]}
             ]);
         },
