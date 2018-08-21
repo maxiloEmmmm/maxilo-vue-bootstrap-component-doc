@@ -20,10 +20,14 @@
   "author": "maxilo",
   "license": "MIT",
   "dependencies": {
+    "@ckeditor/ckeditor5-core": "^11.0.0",
+    "@ckeditor/ckeditor5-image": "^10.2.0",
+    "@ckeditor/ckeditor5-ui": "^11.0.0",
     "clipboard": "^2.0.1",
     "cross-env": "^5.1.4",
     "highlight.js": "^9.12.0",
-    "maxilo-vue": "^1.2.77",
-    "maxilo-vue-bootstrap-component": "^1.0.60"
+    "maxilo-vue": "^1.2.79",
+    "maxilo-vue-bootstrap-component": "^1.0.69",
+    "raw-loader": "^0.5.1"
   }
 }

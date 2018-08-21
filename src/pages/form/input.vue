@@ -10,7 +10,11 @@
         <dt>基本用法</dt>
         <dd>
             <mxl-card>
-                <mxl-input></mxl-input>
+                支持<router-link to="/mixs/rule">验证器</router-link>
+                <mxl-list-in-line>
+                    <mxl-input :disabled="disabled" type="text"></mxl-input>
+                    <mxl-btn @click="disabled = !disabled">{{ (disabled ? '不' : '') + '禁用' }}</mxl-btn>
+                </mxl-list-in-line>
                 <mxl-list-group>
                     <mxl-tab :navs="['template']">
                         <mxl-highlight type="javascript">{{ template.demo1 }}</mxl-highlight>
@@ -23,11 +27,25 @@
 
 <script>
     export default {
+        data () {
+            return {
+                disabled: false
+            }
+        },
         computed: {
             template(){
                 return {
                     demo1: 
-`<mxl-input></mxl-input>`,
+`
+/**
+ * type 输入类型 支持html input类型
+ *      default: input
+ *      type: String
+ * disabled 禁用
+ *      default: true
+ *      type: Boolean
+ */
+<mxl-input :disabled="disabled" type="text"></mxl-input>`,
                 };
             }
         }

@@ -3,14 +3,9 @@ import maxiloVue from 'maxilo-vue';
 
 maxiloVue.vue.depComponent(maxiloVueBootstrapComponent);
 
-import tab from './tab.vue';
-maxiloVue.vue.component('mxlTab', tab);
-
 import highlight from './highlight.vue';
 maxiloVue.vue.component('mxlHighlight', highlight);
 
-import card from './card.vue';
-maxiloVue.vue.component('mxlCard', card);
 //example for dep
 
 // maxiloVue.vue.depComponent({

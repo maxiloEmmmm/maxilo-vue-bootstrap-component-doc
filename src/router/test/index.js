@@ -5,12 +5,8 @@ let $router = maxiloVue.router.getRoute();
 $router.add('/path/to', () =>
     import ('../../pages/test/index'));
 
-$router.middlewareGroup('auth', function () {
-    return [
-        $router.add('/test/component', () =>
-            import ('../../pages/test/component'))
-    ];
-});
+$router.add('/test/component', () =>
+    import ('../../pages/test/component'))
 
 $router.add('/index', () =>
     import ('pages/index'));
@@ -58,3 +54,12 @@ $router.add('/form/select', () =>
     import ('pages/form/select.vue'));
 $router.add('/form/input', () =>
     import ('pages/form/input.vue'));
+$router.add('/form/date', () =>
+    import ('pages/form/date.vue'));
+$router.add('/form/editor', () =>
+    import ('pages/form/editor.vue'));
+$router.add('/form/switch', () =>
+    import ('pages/form/switch.vue'));
+
+$router.add('/wait', () =>
+    import ('pages/wait.vue'));
