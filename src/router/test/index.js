@@ -45,6 +45,8 @@ $router.add('/lib/emotion-text', () =>
     import ('pages/lib/emotion-text.vue'));
 $router.add('/lib/loading', () =>
     import ('pages/lib/loading.vue'));
+$router.add('/lib/loading/block', () =>
+    import ('pages/lib/loading-block.vue'));
 
 $router.add('/form/btn', () =>
     import ('pages/form/btn.vue'));

@@ -4,7 +4,7 @@
             <mxl-emotion-text>mxl-loading</mxl-emotion-text>
         </dt>
         <dd>
-            <p class="mb-0">等待.</p>
+            <p class="mb-0">小等待.</p>
         </dd>
 
         <dt>基本用法</dt>

@@ -65,8 +65,8 @@ export default {
                     {title: '警告', href: '/lib/alert'},
                     {title: '包裹着文字~', href: '/lib/emotion-text'},
                     {title: '等待', href: '#', hasChild: 1, children: [
-                        {title: '行内', href: '/wait'},
-                        {title: '块', href: '/wait'},
+                        {title: '小一点', href: '/lib/loading'},
+                        {title: '块', href: '/lib/loading/block'},
                     ]},
                     {title: '弹出层', href: '/lib/modal'},
                 ]},

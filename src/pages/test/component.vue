@@ -2,10 +2,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <mxl-form-container v-mxl-loading:girl="hi" ref="test">
-                    <mxl-input v-for="i in 10" :key="i">{{ i }}</mxl-input>
+                <mxl-form-container v-mxl-loading="hi" ref="test">
+                    <mxl-input v-for="i in 5" :key="i">{{ i }}</mxl-input>
                 </mxl-form-container>
-                <!-- <loading-water v-model="hi" ref="test"></loading-water> -->
+                <!-- <mxl-loading-build v-model="hi" ref="test"></mxl-loading-build> -->
             </div>
         </div>
     </div>
