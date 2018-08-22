@@ -11,7 +11,7 @@
                         <a style="color:#fff" target="black" href="https://www.npmjs.com/package/maxilo-vue">核心版本: 1.2.79</a>
                     </mxl-emotion-text>
                     <mxl-emotion-text>
-                        <a style="color:#fff" target="black" href="https://www.npmjs.com/package/maxilo-vue-bootstrap-component">组件版本: 1.0.69</a>
+                        <a style="color:#fff" target="black" href="https://www.npmjs.com/package/maxilo-vue-bootstrap-component">组件版本: 1.0.73</a>
                     </mxl-emotion-text>
                 </mxl-list-in-line>
                 <div class="dropdown-divider shadow-sm"></div>

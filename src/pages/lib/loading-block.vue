@@ -1,7 +1,7 @@
 <template>
     <dl>
-        <dt>指令名
-            <mxl-emotion-text>mxl-loading-?</mxl-emotion-text>
+        <dt>指令名 (!!!注意这是vue指令 不是组件)
+            <mxl-emotion-text>v-mxl-loading(:.+)?</mxl-emotion-text>
         </dt>
         <dd>
             <p class="mb-0">等待块.</p>

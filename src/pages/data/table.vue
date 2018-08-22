@@ -10,7 +10,7 @@
             <div class="card" style="border-radius-0">
                 <div class="card-body">
                     <p class="card-text">
-                        <mxl-table :ths="ths.demo1" :data="ds.demo1" toolColWidth="10%">
+                        <mxl-table :ths="ths.demo1" :data="ds.demo1" toolColWidth="10%" :useCheck="true">
                             <template slot="sexSlot" slot-scope="props">
                                 {{ ['未知', '男', '女'][props.view.sex] }}
                             </template>
@@ -92,7 +92,7 @@
             <div class="card" style="border-radius-0">
                 <div class="card-body">
                     <p class="card-text">
-                        <mxl-table :ths="ths.demo2" :url="api.LIST" :async="async" :listItemSize="10" :init="true">
+                        <mxl-table :ths="ths.demo2" :url="api.LIST" :async="async" :listItemSize="10" :init="true" :useCheck="true">
                             <template slot="sexSlot" slot-scope="props">
                                 {{ ['未知', '男', '女'][props.view.sex] }}
                             </template>
@@ -133,6 +133,26 @@
                 </div>
             </div>
         </dd>
+
+        <dt>方法</dt>
+        <dd>
+            <mxl-list-group>
+                <pre>
+                    getCheckData
+                    /* 获取勾选数据接口
+                    * [{id: 1, n: 'x'}, {id: 2, n: 'x2'}]
+                    * getCheckData('id') || getCheckData(['id']) -> [{id: 1}, {id: 2}]
+                    * getCheckData('id', true) || getCheckData(['id'], true) -> [1, 2]
+                    */</pre>
+                <pre>
+                    checkAll
+                    /*全选*/
+                    checkNone
+                    /*清空*/
+                    checkToggle
+                    /*反选*/</pre>
+            </mxl-list-group>
+        </dd>
     </dl>
 </template>
 
@@ -152,12 +172,17 @@ export default {
  *      type: Array
  *      default: Array(0)
  * toolColWidth 工具列(第一列)宽度占比
+ * useCheck
+ *      type: Boolean
+ *      default: false
  */
-<mxl-table :ths="ths" :data="ds" toolColWidth="10%">
+<mxl-table :ths="ths" :data="ds" toolColWidth="10%" :useCheck="true">
     <template slot="sexSlot" slot-scope="props">
         <!-- 
             props.view 当前行的数据集合
             props.th 表头配置集合 也就是传入的ths
+            props.index 当前行索引
+            props.thIndex 当前列索引(隐藏列不存在)
         --> 
         {{ ['未知', '男', '女'][props.view.sex] }}
     </template>
@@ -181,7 +206,7 @@ export default {
  *      表格加载后若存在api接口会立即请求, 但有时候接口地址为异步获取或为具体操作动态设定这时候可以设定为false, 从而取消初始化,
  *      待api确定后, 手动 通过ref 调用refresh 拉取数据.
  */
-<mxl-table :ths="ths.demo1" :url="api.LIST" :listItemSize="10" :async="async" :init="true">
+<mxl-table :ths="ths.demo1" :url="api.LIST" :listItemSize="10" :async="async" :init="true" :useCheck="true">
     <template slot="sexSlot" slot-scope="props">
         {{ ['未知', '男', '女'][props.view.sex] }}
     </template>
