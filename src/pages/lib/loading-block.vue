@@ -1,6 +1,6 @@
 <template>
     <dl>
-        <dt>组件名
+        <dt>指令名
             <mxl-emotion-text>mxl-loading-?</mxl-emotion-text>
         </dt>
         <dd>
