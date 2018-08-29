@@ -11,7 +11,7 @@
                         <a style="color:#fff" target="black" href="https://www.npmjs.com/package/maxilo-vue">核心版本: 1.2.79</a>
                     </mxl-emotion-text>
                     <mxl-emotion-text>
-                        <a style="color:#fff" target="black" href="https://www.npmjs.com/package/maxilo-vue-bootstrap-component">组件版本: 1.0.73</a>
+                        <a style="color:#fff" target="black" href="https://www.npmjs.com/package/maxilo-vue-bootstrap-component">组件版本: 1.0.76</a>
                     </mxl-emotion-text>
                 </mxl-list-in-line>
                 <div class="dropdown-divider shadow-sm"></div>
@@ -54,7 +54,6 @@ export default {
                         {title: '一行一列', href: '/layout/rowcol'},
                         {title: '无限极', href: '/layout/hierarchy'}
                     ]},
-                    {title: '卡片', href: '/layout/card'},
                     {title: '列表组', href: '/layout/listGroup'},
                     {title: '行内组', href: '/layout/listInLine'},
                     {title: '无限箱子', href: '/layout/box'},
@@ -69,15 +68,22 @@ export default {
                         {title: '块', href: '/lib/loading/block'},
                     ]},
                     {title: '弹出层', href: '/lib/modal'},
+                    {title: '选项卡', href: '/lib/tab'},
+                    {title: '卡片', href: '/lib/card'},
+                    {title: '后台组件(完善中)', href: '/lib/dashboard'},
                 ]},
                 {title: 'Form', href: '#', hasChild: 1, children: [
                     {title: '输入框', href: '/form/input'},
                     {title: '下拉', href: '/form/select'},
+                    {title: '下拉菜单', href: '/form/drop-menu'},
                     {title: '按钮', href: '/form/btn'},
                     {title: '按钮组', href: '/form/btn-group'},
                     {title: '日期', href: '/form/date'},
                     {title: '编辑器(第三方 - ckeditor5)', href: '/form/editor'},
-                    {title: '开关', href: '/form/switch'}
+                    {title: '开关', href: '/form/switch'},
+                    {title: '联动', href: '/form/cascade'},
+                    {title: '表单容器', href: '/form/container'},
+                    {title: '输入组', href: '/form/input-group'}
                 ]}
             ]);
         },

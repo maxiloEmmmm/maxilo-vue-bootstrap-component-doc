@@ -9,7 +9,8 @@
     "watch-poll": "npm run watch -- --watch-poll",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --color --compress --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "update": "rm -fr node_modules/*maxilo-vue* && cnpm install"
   },
   "keywords": [
     "bootstrap",
@@ -27,7 +28,7 @@
     "cross-env": "^5.1.4",
     "highlight.js": "^9.12.0",
     "maxilo-vue": "^1.2.79",
-    "maxilo-vue-bootstrap-component": "^1.0.73",
+    "maxilo-vue-bootstrap-component": "^1.0.76",
     "raw-loader": "^0.5.1"
   }
 }

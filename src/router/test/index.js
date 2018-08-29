@@ -15,8 +15,6 @@ $router.add('/data/table', () =>
     import ('pages/data/table.vue'));
 
 
-$router.add('/layout/card', () =>
-    import ('pages/layout/card.vue'));
 $router.add('/layout/listGroup', () =>
     import ('pages/layout/listGroup.vue'));
 $router.add('/layout/listInLine', () =>
@@ -47,6 +45,12 @@ $router.add('/lib/loading', () =>
     import ('pages/lib/loading.vue'));
 $router.add('/lib/loading/block', () =>
     import ('pages/lib/loading-block.vue'));
+$router.add('/lib/tab', () =>
+    import ('pages/lib/tab.vue'));
+$router.add('/lib/card', () =>
+    import ('pages/lib/card.vue'));
+$router.add('/lib/dashboard', () =>
+    import ('pages/lib/dashboard.vue'));
 
 $router.add('/form/btn', () =>
     import ('pages/form/btn.vue'));
@@ -62,6 +66,19 @@ $router.add('/form/editor', () =>
     import ('pages/form/editor.vue'));
 $router.add('/form/switch', () =>
     import ('pages/form/switch.vue'));
+$router.add('/form/cascade', () =>
+    import ('pages/form/cascade.vue'));
+$router.add('/form/container', () =>
+    import ('pages/form/container.vue'));
+$router.add('/form/input-group', () =>
+    import('pages/form/input-group.vue'));
+$router.add('/form/drop-menu', () =>
+    import ('pages/form/drop-menu.vue'));
+
+$router.add('/example/dashboard', () =>
+    import ('pages/example/dashboard/index.vue'));
+$router.add('/example/dashboard/work-space', () =>
+    import ('pages/example/dashboard/work-space.vue'));
 
 $router.add('/wait', () =>
     import ('pages/wait.vue'));

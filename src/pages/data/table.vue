@@ -11,6 +11,9 @@
                 <div class="card-body">
                     <p class="card-text">
                         <mxl-table :ths="ths.demo1" :data="ds.demo1" toolColWidth="10%" :useCheck="true">
+                            <template slot="indexSlot" slot-scope="props">
+                                {{ props.index + 1 }}
+                            </template>
                             <template slot="sexSlot" slot-scope="props">
                                 {{ ['未知', '男', '女'][props.view.sex] }}
                             </template>
@@ -61,6 +64,7 @@
                  * align 对其
                  *      left / right / center(default)
                  */
+                {field: 'index', title: '索引', tdSlot: 'indexSlot'},
                 {field: 'id', title: 'ID', sort: true},
                 {field: 'username', title: '用户名', width: '10%', align: 'left'},
                 {field: 'age', title: '年龄', hide: true},
@@ -177,6 +181,9 @@ export default {
  *      default: false
  */
 <mxl-table :ths="ths" :data="ds" toolColWidth="10%" :useCheck="true">
+    <template slot="indexSlot" slot-scope="props">
+        {{ props.index + 1 }}
+    </template>
     <template slot="sexSlot" slot-scope="props">
         <!-- 
             props.view 当前行的数据集合
@@ -234,6 +241,7 @@ export default {
         ths(){
             return {
                 demo1: [
+                    {field: 'index', title: '索引', tdSlot: 'indexSlot'},
                     {field: 'id', title: 'ID', sort: true},
                     {field: 'username', title: '用户名', width: '10%', align: 'left'},
                     {field: 'age', title: '年龄', hide: true},
