@@ -1,0 +1,1 @@
+webpackJsonp([36],{548:function(n,e,t){var r=t(0)(null,t(624),!1,null,null,null);n.exports=r.exports},624:function(n,e){n.exports={render:function(){var n=this.$createElement;return(this._self._c||n)("span",[this._v("Test for dashboard.")])},staticRenderFns:[]}}});
