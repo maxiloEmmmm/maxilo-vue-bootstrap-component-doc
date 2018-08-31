@@ -10,7 +10,7 @@
         <dt>基本用法</dt>
         <dd>
             <mxl-card>
-                <mxl-modal :show.sync="show"> 
+                <mxl-modal :show.sync="show" :fullScreen="false" size="65" :useShadow="true"> 
                     hi, modal. 
                     <span slot="header">modal header slot</span>
                     <span slot="footer">modal footer slot</span>
@@ -44,8 +44,14 @@
  * fullScreen 全屏显示
  *      default: true
  *      type: Boolean
+ * size 大小
+ *      default: 65
+ *      type: String or Number (1-100)
+ * useShadow 阴影遮罩
+ *      default: true
+ *      type: true
  */
-<mxl-modal :show.sync="show"> 
+<mxl-modal :show.sync="show" size="65" :useShadow="true"> 
     hi, modal.
     <span slot="header">modal header slot</span>
     <span slot="footer">modal footer slot</span> 

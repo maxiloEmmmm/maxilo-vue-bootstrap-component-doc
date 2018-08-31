@@ -12,7 +12,7 @@
             <mxl-card>
                 支持<router-link to="/mixs/rule">验证器</router-link>
                 <mxl-list-in-line>
-                    <mxl-input :disabled="disabled" type="text"></mxl-input>
+                    <mxl-input placeholder="输入点什么..." :disabled="disabled" type="text"></mxl-input>
                     <mxl-btn @click="disabled = !disabled">{{ (disabled ? '不' : '') + '禁用' }}</mxl-btn>
                 </mxl-list-in-line>
                 <mxl-list-group>
@@ -44,8 +44,11 @@
  * disabled 禁用
  *      default: true
  *      type: Boolean
+ * placeholder 提示
+ *      default: ''
+ *      type: String
  */
-<mxl-input :disabled="disabled" type="text"></mxl-input>`,
+<mxl-input :disabled="disabled" type="text" placeholder="输入点什么..."></mxl-input>`,
                 };
             }
         }

@@ -80,5 +80,13 @@ $router.add('/example/dashboard', () =>
 $router.add('/example/dashboard/work-space', () =>
     import ('pages/example/dashboard/work-space.vue'));
 
+$router.add('/test/drag', () =>
+    import ('pages/test/drag.vue'));
+$router.add('/test/dragTree', () =>
+    import ('pages/test/dragTree.vue'));
+
 $router.add('/wait', () =>
     import ('pages/wait.vue'));
+
+$router.add('/log', () =>
+    import ('pages/log.vue'));
