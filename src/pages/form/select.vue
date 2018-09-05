@@ -87,6 +87,9 @@
  * placeholder 未选择时下拉框中的提示
  *      type: String
  *      default: ''
+ * disabled 禁用
+ *      type: Boolean
+ *      default: false
  */ 
 <mxl-select :options="options" v-model="data" :more="more" :autoClickHide="true" :single="true" placeholder="hi"></mxl-select>`,
                 };

@@ -9,7 +9,7 @@
             <span>mxl-modal</span>
             <mxl-list-group>
                 <span>
-                    <i class="fa fa-plus"></i> 新增大小属性
+                    <i class="fa fa-plus"></i> 新增大小属性2
                     <span class="float-right"><i class="fa fa-comment-o"></i> 杨总</span>
                 </span>
                 <span><i class="fa fa-plus"></i> 新增使用阴影属性</span>

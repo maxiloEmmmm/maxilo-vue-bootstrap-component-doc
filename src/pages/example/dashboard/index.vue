@@ -1,16 +1,22 @@
 <template>
-    <mxl-dashboard :items="menus" :initPage="pages"></mxl-dashboard>
+    <mxl-dashboard :nav="nav" :items="menus" :initPage="pages">
+        <a slot="tab_right" @click="out"><i class="fa fa fa-sign-out"></i> 退出</a>
+    </mxl-dashboard>
 </template>
 
 <script>
     export default {
         data() {
             return {
+                navHeaderMenu: {
+                    '退出': this.out
+                },
                 pages: [{
                     title: '测试work-space',
                     href: '/example/dashboard/work-space'
                 }],
-                menus: [{
+                menus: [
+                    {
                     title: 'Data-Dispaly',
                     href: '#',
                     hasChild: 1,
@@ -128,6 +134,21 @@
                         href: '/form/input-group'
                     }]
                 }]
+            }
+        },
+        methods: {
+            async out(){
+                this.$utils.diy.alert.base('out');
+            }
+        },
+        computed: {
+            nav(){
+                return {
+                    items: this.menus,
+                    headerMenu: this.navHeaderMenu,
+                    nick_name: '123',
+                    role_name: '123'
+                }
             }
         }
     }
